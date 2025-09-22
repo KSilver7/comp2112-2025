@@ -29,8 +29,9 @@ export default function Contact() {
     const handleSubmit = (event: React.ChangeEvent<HTMLInputElement>)
     Suggested change from google ai from the search bar:
     const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>)
+    But I left it as my own because it still works.
     */
-    const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const handleSubmit = (event: React.ChangeEvent<HTMLInputElement>) => {
         setConfirmation(`Your name: ${name} - Your message: ${message}`);
     }
 
