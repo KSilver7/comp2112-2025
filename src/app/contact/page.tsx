@@ -21,7 +21,16 @@ export default function Contact() {
     
 
     // show confirmation when button clicked
-    const handleSubmit = (event: React.ChangeEvent<HTMLInputElement>) => {
+
+    /*I got an onClick event type error. The site still works, but the onClick is underlined. It only goes away
+    if I change the event type from ChangeEvent and HTMLInput to MouseEvent and HTMLButtonElement */
+    
+    /* My code:
+    const handleSubmit = (event: React.ChangeEvent<HTMLInputElement>)
+    Suggested change from google ai from the search bar:
+    const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>)
+    */
+    const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
         setConfirmation(`Your name: ${name} - Your message: ${message}`);
     }
 
