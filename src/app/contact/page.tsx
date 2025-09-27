@@ -44,7 +44,7 @@ export default function Contact() {
             <input type="text" placeholder="Your Message" value={message} onChange={handleMessageChange} />
             <p>Your message is: {message}</p>
 
-            <button onClick = {handleSubmit}>Submit</button>
+            <button onClick={handleSubmit}>Submit</button>
             <p>{confirmation}</p>
         </main>
     );
