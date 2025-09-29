@@ -1,3 +1,4 @@
+import PageTitle from "@/app/components/PageTitle";
 type Post = {
     id: number;
     title: string;
@@ -28,6 +29,7 @@ export default async function Post({ params }: { params: { id: number }}) {
     // display blog post
     return (
         <main className="card">
+            <PageTitle title="Blog Post" />
             <h1>{post.title}</h1>
             <h2>By {post.author} on {post.date}</h2>
             <article>
