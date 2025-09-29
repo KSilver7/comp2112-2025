@@ -23,7 +23,7 @@ export default function Navbar() {
            <Link href="/">
                 COMP2112 App
            </Link>
-           <ul className="flex flex-col md:flex-row md:space-x-4">
+           <ul className="navElements">
                <li><Link href="/about" className={getLinkClass('/about')}>About</Link></li>
                <li><Link href="/contact" className={getLinkClass('/contact')}>Contact</Link></li>
                <li><Link href="/blog" className={getLinkClass('/blog')}>Blog</Link></li>

@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+/* tailwind conversion by co-pilot*/
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -111,6 +111,15 @@ nav {
  .brand {
    margin-bottom: 0;
  }
+ .navElements {
+    flex-direction: row;
+    gap: 1rem; /*eqivalent to Tailwind's space-x-4*/
+ }
+}
+
+.navElements {
+  display: flex;
+  flex-direction: row;
 }
 
 footer {
