@@ -24,7 +24,7 @@ export default async function Blog() {
                     <li key={post.id} className="bg-white p-4 rounded shadow">
                         <Link href={`/blog/${post.id}`}>
                             {post.title}
-                        </Link>
+                        </Link>                     
                     </li>
                 ))}
             </ul>
